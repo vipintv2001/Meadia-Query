@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+
 header {
   background: #333;
   color: #fff;
@@ -49,14 +49,14 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Main Content */
+
 main .content {
   display: grid;
   gap: 1em;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1em;
-  grid-template-columns: repeat(3, 1fr); /* Default for desktop */
+  grid-template-columns: repeat(3, 1fr); 
 }
 
 main .content .box {
@@ -69,7 +69,7 @@ main .content .box {
 main .content .box img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* Optional for aesthetics */
+  border-radius: 8px; 
 }
 
 main .content .box h2 {
@@ -81,7 +81,7 @@ main .content .box p {
   color: #555;
 }
 
-/* Content Section Heading */
+
 .content-heading {
   text-align: center;
   font-size: 1.8em;
@@ -89,7 +89,7 @@ main .content .box p {
   color: #333;
 }
 
-/* Footer */
+
 footer {
   background: #333;
   color: #fff;
@@ -103,7 +103,7 @@ footer .container ul {
   justify-content: center;
   gap: 1em;
   padding: 0;
-  flex-wrap: nowrap; /* Ensure items stay on one line */
+  flex-wrap: nowrap; 
 }
 
 footer .container ul li a {
@@ -118,36 +118,36 @@ footer .container ul li a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   main .content {
-    grid-template-columns: repeat(2, 1fr); /* 2 boxes per row for tablets */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   header .container {
-    flex-direction: column; /* Stack logo and navigation */
-    text-align: center; /* Center-align content */
+    flex-direction: column; 
+    text-align: center; 
   }
 
   header nav ul {
-    justify-content: center; /* Center navigation links */
+    justify-content: center; 
   }
 }
 
 @media (max-width: 480px) {
   main .content {
-    grid-template-columns: 1fr; /* 1 box per row for mobile */
+    grid-template-columns: 1fr;
   }
 
   header .container {
     flex-direction: column;
-    align-items: center; /* Center-align content in header */
+    align-items: center; 
     text-align: center;
   }
 
   header nav ul {
-    flex-direction: row; /* Ensure navigation links stay in one line */
-    justify-content: center; /* Center-align navigation links */
+    flex-direction: row; 
+    justify-content: center; 
   }
 
   footer .container ul {
-    flex-wrap: nowrap; /* Ensure social media links stay on one line */
+    flex-wrap: nowrap; 
   }
 }
